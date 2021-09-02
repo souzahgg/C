@@ -36,21 +36,18 @@ int main(void)
         quarter_count = trunc(change_remain);
         change_remain = round((change_remain - quarter_count) * quarter);
     }
-
     if (change_remain >= dime)
     {
         change_remain = (change_remain / dime);
         dime_count = trunc(change_remain);
         change_remain = round((change_remain - trunc(change_remain)) * dime);
     }
-
     if (change_remain >= nickel)
     {
         change_remain = (change_remain / nickel);
         nickel_count = trunc(change_remain);
         change_remain = round((change_remain - trunc(change_remain)) * nickel);
     }
-
     if (change_remain >= penny)
     {
         penny_count = change_remain;

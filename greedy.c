@@ -5,7 +5,6 @@
 #include <math.h>
 
 int main(void)
-
 {
     // Asking user for the change
     float change;

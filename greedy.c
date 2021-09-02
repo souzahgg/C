@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <math.h>
-
 int main(void)
 {
     // Asking user for the change
@@ -13,10 +12,8 @@ int main(void)
         change = get_float("How much change is owed: ");
     }
     while (change < 0);
-
     // converting fraction to integer
     int cents = round(100 * change);
-
     // Keeping track of number of coins
     int coin_count = 0;
     int change_remain = cents;
@@ -24,7 +21,6 @@ int main(void)
     int dime = 10;
     int nickel = 5;
     int penny = 1;
-
     // Calculating how many coins according to greed algorithm
     if (cents >= quarter)
     {
